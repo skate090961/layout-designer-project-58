@@ -1,5 +1,7 @@
 /** CSS STYLE **/
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -20,12 +22,30 @@ body {
   color: var(--dark);
 }
 
-header,
+.header-container,
 main,
 footer {
   max-width: 1100px;
   text-align: center;
   padding: 100px 0;
+  margin: 0 auto;
+}
+
+header::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+} 
+
+header {
+  background-color: var(--light);
 }
 
 h1,
@@ -33,6 +53,7 @@ h2,
 h3 {
   font-family: 'Neucha', cursive;
   line-height: 1.2em;
+  margin: 0 auto;
 }
 
 h1 {
@@ -46,4 +67,59 @@ h2 {
 h3 {
   font-size: 34px;
 }
+
+.header-container {
+  position: relative;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.header-title {
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 200;
+}
+
+.header-title-color {
+  color: var(--basic);
+}
+
+.header-img {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+  z-index: 100;
+}
+
+.header-columns {
+  column-count: 2;
+  column-gap: 30px;
+  width: 1110px;
+  margin-top: 201px;
+}
+
+.header-columns p {
+  margin-top: 0;
+  text-align: left;
+}
+
+.avoid {
+  break-inside: avoid;
+}
+
+.avoid p:last-of-type {
+  margin-top: 52px;
+}
+
+.button-more {
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic);
+}
+
 
