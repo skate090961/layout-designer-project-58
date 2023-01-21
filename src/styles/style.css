@@ -25,8 +25,14 @@ body {
 .header-section,
 .video-section,
 .navigation-section,
+.ikea-effect-container,
+.premature-optimization-container,
+.distortion-of-novelty-container,
+.hyperbolic-depreciation-container,
+.errors-in-planning-container,
+.biases-container,
 footer {
-  max-width: 1100px;
+  max-width: 1110px;
   text-align: center;
   padding: 100px 0;
   margin: 0 auto;
@@ -55,6 +61,30 @@ header {
 
 .navigation-container {
   background-color: var(--basic-dark);
+}
+
+.biases-container-bg:nth-child(2n+1) {
+  position: relative;
+  background-color: var(--light);
+}
+
+.biases-container-bg:nth-child(2n) {
+  position: relative;
+  background-color: var(--brown);
+  color: white;
+}
+
+.biases-container-bg::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
 }
 
 h1,
@@ -204,4 +234,88 @@ h3 {
   justify-content: space-between;
   padding: 0;
   width: 1100px;
+}
+
+.cognitive-biases-head {
+  display: flex;
+}
+
+.title-head h2 {
+  text-align: left;
+}
+
+.tiltle-head {
+  text-align: left;
+}
+
+.image-block {
+  height: 100%;
+}
+
+.cognitive-biases-img {
+  padding-right: 30px;
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  vertical-align: middle;
+}
+
+.right-img {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.cognitive-biases-head p:first-of-type {
+  text-align: left;
+  margin: 0;
+  color: var(--translucent-dark);
+  font-size: 24px;
+  font-family: 'Neucha', cursive;
+}
+
+.cognitive-biases-head p:nth-of-type(2n) {
+  text-align: left;
+  color: var(--dark);
+  font-size: 34px;
+  font-family: 'Neucha', cursive;
+  line-height: 41px;
+}
+
+.cognitive-biases-title-column {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.title-column-color {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.cognitive-biases-columns {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.cognitive-biases-columns p {
+  text-align: left;
+  margin: 0;
+  break-inside: avoid;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+#first-p {
+  color: var(--translucent-white);
+}
+
+#second-p {
+  color: var(--white);
 }
