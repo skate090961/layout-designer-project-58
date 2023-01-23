@@ -131,6 +131,10 @@ h3 {
   color: var(--basic);
 }
 
+.after-title {
+  margin-bottom: 0;
+}
+
 .header-img {
   position: absolute;
   height: 525px;
@@ -174,7 +178,7 @@ h3 {
 
 .video {
   position: relative;
-  margin-top: 14px;
+  margin-top: 30px;
   margin-bottom: -200px;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
