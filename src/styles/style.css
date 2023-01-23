@@ -31,7 +31,7 @@ body {
 .hyperbolic-depreciation-container,
 .errors-in-planning-container,
 .biases-container,
-footer {
+.footer-container {
   max-width: 1110px;
   text-align: center;
   padding: 100px 0;
@@ -53,6 +53,10 @@ header::before {
 
 header {
   background-color: var(--light);
+}
+
+footer {
+  background-color: var(--white);
 }
 
 .video-container {
@@ -318,4 +322,82 @@ h3 {
 
 #second-p {
   color: var(--white);
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--basic-dark);
+  padding-left: 55px;
+  padding-right: 55px;
+  
+}
+
+.footer-form p:first-child {
+  font-size: 34px;
+  font-family: 'Neucha', cursive;
+  text-align: left;
+  color: var(--white);
+  line-height: 120%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.email {
+  margin-top: 38px;
+}
+
+.email p:first-child {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.email input {
+  margin-top: 9px;
+  height: 50px;
+  padding: 15px;
+  width: 390px;
+  border: none;
+}
+
+form + p {
+  color: var(--white);
+  font-size: 12px;
+  text-align: left;
+  margin: 0;
+}
+
+.default-btn {
+  position: relative;
+  height: 50px;
+  width: 70px;
+  margin-top: 9px;
+  border: none;
+  background-color: var(--basic);
+}
+
+.default-btn::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: url(../img/send.svg) center no-repeat;
+}
+
+.email-flex {
+  display: flex;
+}
+
+.contacts {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.author {
+  margin-top: 0;
 }
