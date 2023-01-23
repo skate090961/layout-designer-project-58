@@ -18,8 +18,10 @@
 }
 
 body {
+  font-weight: 400;
   font: 16px/1.6em 'Open Sans', sans-serif;
   color: var(--dark);
+  margin: 0;
 }
 
 .header-section,
@@ -94,6 +96,7 @@ footer {
 h1,
 h2,
 h3 {
+  font-weight: 400;
   font-family: 'Neucha', cursive;
   line-height: 1.2em;
   margin: 0 auto;
@@ -222,6 +225,7 @@ h3 {
 }
 
 .card-number {
+  font-weight: 400;
   font: 64px/1 'Neucha', cursive;
   color: var(--basic-dark);
 }
@@ -273,6 +277,7 @@ h3 {
   color: var(--translucent-dark);
   font-size: 24px;
   font-family: 'Neucha', cursive;
+  font-weight: 400;
 }
 
 .cognitive-biases-head p:nth-of-type(2n) {
@@ -281,6 +286,7 @@ h3 {
   font-size: 34px;
   font-family: 'Neucha', cursive;
   line-height: 41px;
+  font-weight: 400;
 }
 
 .cognitive-biases-title-column {
@@ -341,6 +347,7 @@ h3 {
   line-height: 120%;
   padding-top: 21px;
   padding-bottom: 21px;
+  font-weight: 400;
 }
 
 .email {
