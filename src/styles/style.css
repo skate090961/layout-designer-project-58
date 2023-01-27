@@ -1,7 +1,49 @@
-/** CSS STYLE **/
+:root {
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
 
-.hello {
-  display: block;
+  --font-neucha: 'Neucha', cursive; 
+}
 
-  color: #fff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font: normal 16px/1.6em 'Open Sans', sans-serif;
+  color: var(--dark);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2em;
+  font-family: var(--font-neucha);
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+.container {
+  width: 1110px;
+  margin: 100px auto;
+
+  border: 3px solid black;
 }
