@@ -299,3 +299,85 @@ h3 {
 .bg-color-white {
   background-color: var(--white);
 }
+
+/* __ФУТЕР__ */
+
+.flex-form {
+  display: flex;
+  background-color: var(--main-dark);
+  justify-content: space-between;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.flex-form-item {
+  flex: 1 1 50%;
+}
+
+.label-email {
+  display: block;
+  font-size: 18px;
+}
+
+.email-flex {
+  display: flex;
+  margin-top: 9px;
+}
+
+.email {
+  display: block;
+  height: 50px;
+  padding: 15px;
+  width: 430px;
+  border: none;
+}
+
+.btn {
+  position: relative;
+  border: none;
+  background-color: var(--primary);
+  height: 50px;
+  width: 70px;
+}
+
+.flex-form-info {
+  font-family: var(--font-neucha);
+  font-size: 34px;
+  line-height: 40.8px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin: 0;
+}
+
+.form {
+  margin-top: 38px;
+}
+
+.btn::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: url(../img/send.svg) center no-repeat;
+}
+
+.form p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.form p a {
+  color: var(--white);
+}
+
+.contacts {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.iline-block {
+  display: inline-block;
+}
