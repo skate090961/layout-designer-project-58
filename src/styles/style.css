@@ -19,6 +19,7 @@
 body {
   font: normal 16px/1.6em 'Open Sans', sans-serif;
   color: var(--dark);
+  margin: 0;
 }
 
 h1,
@@ -48,6 +49,8 @@ h3 {
   margin: 0 auto;
   padding: 100px 0;
 }
+
+/* ___ШАПКА___ */
 
 .header {
   position: relative;
@@ -108,3 +111,84 @@ h3 {
   background-color: var(--primary);
   color: var(--white);
 }
+
+/* ___ВИДЕО-СЕКЦИЯ___ */
+
+.video-section {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.video-section p {
+  margin-top: 30px;
+}
+
+.video {
+  position: relative;
+  margin-top: 14px;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  margin-bottom: -210px;
+}
+
+/* ___НАВИГАЦИЯ-СЕКЦИЯ___ */
+
+.navigation-section {
+  background-color: var(--main-dark);
+}
+
+.navigation-flex {
+  margin-top: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-element {
+  flex: 1 1 31%;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.flex-element:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.flex-element:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.navigation-flex h2 {
+  font-size: 52px;
+  color: var(--white);
+}
+
+.navigation-flex ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  padding: 24px;
+  background-color: var(--light);
+}
+
+.navigation-card-number {
+  margin-bottom: 40px;
+  font-size: 64px;
+  font-family: var(--font-neucha);
+  line-height: 1;
+  color: var(--main-dark);
+}
+
+.navigation-card-title {
+  font-family: var(--font-neucha);
+}
+
+.navigation-card-text {
+  color: var(--dark);
+  margin-top: 16px;
+}
+
