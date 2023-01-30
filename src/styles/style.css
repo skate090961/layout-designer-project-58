@@ -360,7 +360,7 @@ h3 {
   left: 0;
   right: 0;
   content: "";
-  background: url(../img/send.svg) center no-repeat;
+  background: url(/src/img/send.svg) center no-repeat;
 }
 
 .form p {
