@@ -61,7 +61,7 @@ h3 {
 
 .header::before {
   position: absolute;
-  background-image: url(/src/img/background.png);
+  background-image: url(/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -266,7 +266,7 @@ h3 {
 .premature-optimization::before,
 .hyperbolic-depreciation::before {
   position: absolute;
-  background-image: url(/src/img/background.png);
+  background-image: url(/img/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
@@ -360,7 +360,11 @@ h3 {
   left: 0;
   right: 0;
   content: "";
+<<<<<<< HEAD
   background: url(/src/img/send.svg) center no-repeat;
+=======
+  background: url(/img/send.svg) center no-repeat;
+>>>>>>> 178239444ed43e499dc8eba860371ca4d5a9ba3c
 }
 
 .form p {
